@@ -1,31 +1,17 @@
 <?php
 
-$a = 1;
-$b = 2;
-
-$suma1 = suma($a,$b);
+$suma1 = suma(1,2);
 echo "Suma1: " . $suma1 . "<br>";
 
-$a = 3;
-$b = 2;
-
-$suma2 = suma($a,$b);
+$suma2 = suma(3,2);
 echo "Suma2: " . $suma2 . "<br>";
 
-$a = 2;
-$b = 2;
-
-$suma3 = suma($a,$b);
+$suma3 = suma(2,2);
 echo "Suma3: " . $suma3 . "<br>";
 
 function suma($a, $b){
-    $sumar = $a + $b;
-    if($a == $b){
-        $sumar = $sumar * 2;
-    }
-    return $sumar;
+    return ($a === $b) ? ($a + $b) * 2 : ($a + $b);
 }
-
 
 
 ?>
